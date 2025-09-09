@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Cau 1 bai tap ve iframe</h1>
+    <p><b>Yeucau</b></p>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.987151479349!2d105.65072319735238!3d20.91283658678135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31344f289bfe3f5d%3A0x8d3cdc2ca5e23298!2zUVVZ4bq-VCBUSeG6vk4!5e0!3m2!1svi!2s!4v1747884607021!5m2!1svi!2s"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"> dia chi xom</iframe>">
+    <form action="xuly.php" method="post" autocomplete="off" novalidate>
+        <label for="fullname">hoten:</label> <br>
+        <input id="fullname" name="hoten" type="text" placeholder="hoten"><br>
+        <label for="mail">Gamil:</label><br>
+        <input id="mail" name="email" type="email" placeholder="nhap mail"><br>
+        <label for="password">matkhau:</label> <br>
+        <input id="password" name="password" type="password" placeholder="nhap mk">
+        <button type="reset">gui</button><br>
+
+    </form>
+    <form action="xuly.php" method="post" autocomplete="off" novalidate>
+        <label for="search">tim</label>
+        <input id="search" name="s" type="text" placeholder="timkiemoday" required><br>
+        <button type="submit">tim kiem</button>
+    </form><br>
+    <form action="xuli.pho" method="post" autocomplete="off" novalidate>
+        <label for="name"> kieu text</label>
+        <input id="name" name="tu_khoakhoa" type="text" placeholder="nham tu khoa">
+
+        <label for="mail">Gamil</label><br>
+        <input id="mail" name="a" type="text" placeholder="nhp mail"><br>
+
+        <label for="pass">password</label><br>
+        <input id="pass" name="b" type="password"><br>
+
+        <label for="so">kieu so</label><br>
+        <input id="so" name="c" type="number"><br>
+
+        <label for="date">kieu date</label><br>
+        <input id="date" name="d" type="date"><br>
+
+        <label for="file">kieu file</label><br>
+        <input id="file" name="e" type="file"><br>
+
+        <label> <input id="radi" name="e" type="radio" value=" mau">nam</label><br>
+        <label> <input id="radi" name="e" type="radio" value=" nu">nu</label>
+        <button type="submit">gui</button>
+
+        <input name="k" type="range" step="1" min="0" max="100">
+        <input name="h" type="color">
+
+
+    </form>
+    <label for="ao">chon danh muc </label>
+    <select name="ao" id="ao">
+        <option value="quan">quan</option>
+        <option value="ao">ao</option>
+        <option value="ta">tat</option>
+    </select>
+    <textarea name="note " rows="10" cols="30"></textarea>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 2px solid #ddd;
+
+        }
+
+        th,
+        td {
+            padding: 15px;
+        }
+    </style>
+    <table>
+        <tbody>
+            <tr>
+                <td>Giới thiệu bản thân</td>
+                <td>
+                    <textarea name="gioithieu" rows="10" cols="90"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Email có thể liên hệ </td>
+                <td>
+                    <input  id="a" name="mail" type="email" placeholder="nhap email" >
+                </td>
+            </tr>
+            <tr>
+                <td>Địa chỉ web của bạn </td>
+                <td>
+                    <input id="b" name="website" type="url">
+                </td>
+            </tr>
+            <tr>
+                <td>SDT</td>
+                <td>
+                    <input id="c" name="sdt" type="number">
+                </td>
+            </tr>
+            <tr>
+                <td>cac loai chon thoi gian</td>
+                <td>
+                    <h3>ngay than</h3>
+                    <label for="d">Chon ngay: </label> 
+                    <input type="date" name="thoigian" id="d"> <br>
+                    <label> chon thang: <input type="month" name="thang"></label><br>
+                    <label> chon tuan: <input type="week" name="tuan"></label><br>
+                    <h3>gio</h3>
+                    <label>chon gio: <input type="time" name="gio"></label><br>
+                    <label>chon ca ngay va gio <input type="datetime-local" name="ngaygio"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>mau yeu thic</td>
+                <td>
+                    <input type="color" name="mau">
+                </td>
+            </tr>
+            <tr>
+                <td>ban dang song o tinh thanh nao</td>
+                <td><input type="text" name="diachi"></td>
+            </tr>
+            <tr>
+                <td>hoten:</td>
+                <td>
+                    <input type="text" name="hoten" placeholder="nhap ten">
+                </td>
+            </tr>
+            <tr>
+                <td>mk</td>
+                <td>hang 0 cot 2</td>
+            </tr>
+            <tr>
+                <td>gioi tinh</td>
+                <td>hang 0 cot 2</td>
+            </tr>
+            <tr>
+                <td>so thich</td>
+                <td>hang 0 cot 2</td>
+            </tr>
+            <tr>
+                <td>tuoi</td>
+                <td>hang 0 cot 2</td>
+            </tr>
+            <tr>
+                <td>tu khoa tim kiem</td>
+                <td>hang 0 cot 2</td>
+            </tr>
+            <tr>
+                <td>hang 0 cot 1</td>
+                <td>hang 0 cot 2</td>
+            </tr>
+            <tr>
+                <td>hang 0 cot 1</td>
+                <td>hang 0 cot 2</td>
+            </tr>
+            <tr>
+                <td>hang 0 cot 1</td>
+                <td>hang 0 cot 2</td>
+            </tr>
+            <tr>
+                <td>hang 0 cot 1</td>
+                <td>hang 0 cot 2</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>
